@@ -1,12 +1,12 @@
 
 import './App.scss';
+import Counter from "./Components/Counter";
 
 function App() {
   return (
     <div className="App">
-bnvbnbv
+     <Counter/>
     </div>
   );
 }
-
 export default App;
