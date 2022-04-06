@@ -1,2 +1,2 @@
-## Func Component
+## Props
 
