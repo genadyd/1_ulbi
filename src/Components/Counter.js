@@ -8,6 +8,7 @@ class Counter extends Component{
         this.state = {
             counter: 0
         }
+        this.counterPlus = this.counterPlus.bind(this)
     }
 
     counterPlus(){
@@ -27,10 +28,9 @@ class Counter extends Component{
         })
     }
     render() {
-        const counterPlus = this.counterPlus.bind(this)
         return (
             <div className="container pt-1">
-                <Button className="me-2" onClick={counterPlus}>Increment</Button>
+                <Button className="me-2" onClick={this.counterPlus}>Increment</Button>
                 <Button onClick={this.counterMinus}>Decrement</Button>
                 <div className="res">{this.state.counter}</div>
             </div>)
