@@ -15,7 +15,7 @@ const AddPost = (props) => {
                 </Form.Text>
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicText">
-                <Form.Label>Password</Form.Label>
+                <Form.Label>Post Text</Form.Label>
                 <Form.Control type="text" placeholder="Post text" />
             </Form.Group>
             <Button variant="primary" type="submit">
