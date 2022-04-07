@@ -1,6 +1,8 @@
-## Post form
+## Post form Button (module)
 *** 
-> * *Add post form*
+>* *Add post form-button*
 > 
-> * *Use props and state*
+>* *Add the "PostFormButton.module.scss" file*
+> 
+>* *Import this file into component*
 

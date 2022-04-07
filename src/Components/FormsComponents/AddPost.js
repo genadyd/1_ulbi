@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {Button, Form} from "react-bootstrap";
+import PostFormButton from "../UiComponents/buttons/PostFormButton";
 
 const AddPost = (props) => {
 
@@ -36,9 +37,10 @@ const AddPost = (props) => {
                 <Form.Control type="text" placeholder="Post text" onInput={e => setNewPostText(e.target.value)}
                               value={newPostText}/>
             </Form.Group>
-            <Button variant="primary" type="submit" onClick={(e) => addPost(e)}>
-                Add Post
-            </Button>
+            {/*<Button variant="primary" type="submit" onClick={(e) => addPost(e)}>*/}
+            {/*    Add Post*/}
+            {/*</Button>*/}
+            <PostFormButton title={"Add Post"} type={"submit"} handler={addPost}/>
         </Form>
     );
 };
