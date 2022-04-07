@@ -11,7 +11,7 @@ const PostsList = () => {
 
     useEffect(() => {
         getPosts().then(responce => {
-            let resPosts = responce.data.filter((item, index) => index < 20)
+            let resPosts = responce.data.slice(0, 20)
             setPostsList(resPosts)
         })
             .catch(e => console.error(`Error: ${e}`))
