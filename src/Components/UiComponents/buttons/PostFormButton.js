@@ -4,7 +4,7 @@ import classes from "./PostFormButton.module.scss";
 const PostFormButton = (props) => {
     return (
         <button className={classes.myBtn} type={props.type} onClick={e => props.handler(e)}>
-            {props.title}
+            {props.children || props.title || 'none'}
         </button>
     );
 };
